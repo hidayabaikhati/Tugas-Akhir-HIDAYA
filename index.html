@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Tabel Data Diri</title>
+  <style>
+   body {
+      background-image:url(33.jpg); 
+      background-size: cover;
+      background-position: center;
+      
+    }
+</style>
+</head>
+<body>
+
+  <div class="container">
+    
+<h2>Coba isi Datamu disini jika sudah mengunjungi website saya</h2>
+    <table id="profileTable">
+      <tr>
+        <th>Nama</th>
+        <th>Alamat</th>
+        <th>Nomor Telepon</th>
+        <th>Aksi</th>
+      </tr>
+     
+    </table>
+
+    <form id="addProfileForm">
+      <label for="name">Nama:</label>
+      <input type="text" id="name" required>
+
+      <label for="address">Alamat:</label>
+      <input type="text" id="address" required>
+
+      <label for="phone">Nomor Telepon:</label>
+      <input type="tel" id="phone" pattern="[0-9]{10}" required>
+      
+      <button type="button" onclick="addProfile()">Tambah Profil</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

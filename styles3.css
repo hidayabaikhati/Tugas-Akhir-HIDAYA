@@ -1,0 +1,33 @@
+svg{
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+svg text{
+  font-family: cursive;
+  font-size: 10rem;
+  stroke-width: 5px;
+  fill: transparent;
+  animation: anim 5s infinite alternate;
+}
+@keyframes anim{
+  from{
+      stroke-dasharray: 0 70%;
+  }
+  to{
+      stroke-dasharray: 10% 0;
+      stroke-dashoffset: 0;
+  }
+  30%{
+      stroke: blue;
+  }
+  65%{
+      stroke: aqua;
+  }
+  100%{
+      stroke: black;
+  }
+}
+
